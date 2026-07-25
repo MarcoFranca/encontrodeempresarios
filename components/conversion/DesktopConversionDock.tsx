@@ -1,0 +1,4 @@
+"use client";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { useEffect, useState } from "react";
+export function DesktopConversionDock() { const [visible,setVisible]=useState(false); const [tickets,setTickets]=useState(false); const reduced=useReducedMotion(); useEffect(()=>{const update=()=>{setVisible(scrollY>innerHeight*.7); const el=document.querySelector("#ingressos"); if(el){const r=el.getBoundingClientRect();setTickets(r.top<innerHeight*.75&&r.bottom>innerHeight*.25)}};addEventListener("scroll",update,{passive:true});update();return()=>removeEventListener("scroll",update)},[]); return <AnimatePresence>{visible&&!tickets?<motion.aside className="desktop-dock" initial={reduced?false:{opacity:0,y:22}} animate={{opacity:1,y:0}} exit={{opacity:0,y:22}}><span>21 AGO · ALPHAVILLE</span><b>Ingressos a partir de R$ 197</b><a href="#ingressos">Garantir meu ingresso ↗</a></motion.aside>:null}</AnimatePresence> }
