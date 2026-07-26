@@ -42,7 +42,7 @@ export const eventContent = {
     },
     {
       name: "Dupla",
-      price: "R$ 347",
+      price: "R$ 397",
       description: "Para sócios, parceiros ou casal que querem sair com o mesmo contexto para decidir.",
       includes: ["2 acessos ao encontro"],
       cta: "Ir com meu sócio",
