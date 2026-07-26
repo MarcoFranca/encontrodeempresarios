@@ -15,6 +15,7 @@ export const eventContent = {
   dateLabel: "21 de agosto de 2026",
   timeLabel: "10h às 18h",
   city: "Alphaville, SP",
+  lotNotice: "LOTE ATUAL COM VALORES PROMOCIONAIS. PREÇOS SOBEM NA VIRADA DE LOTE.",
   venue: {
     name: "Plataforma Internacional",
     address: "Alameda Tocantins, 956, Alphaville Industrial, Barueri/SP",
