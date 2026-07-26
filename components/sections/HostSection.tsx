@@ -8,8 +8,11 @@ export function HostSection() {
       <div className="host-nameplate"><span>PAULO<br />HENRIQUES</span><small>ANFITRIÃO</small></div>
     </div>
     <div className="host-copy">
-      <SectionHeading eyebrow="O anfitrião" title="O curador da sala onde a conversa ganha outro nível." />
+      <SectionHeading eyebrow="Seu anfitrião" title="Paulo abre a sala onde a conversa ganha outro nível." />
       <p>Paulo Henriques reúne empresários para aproximar estratégia, posicionamento e próximos passos em um mesmo ambiente.</p>
+      <div className="host-trust" aria-label="Sinais de credibilidade do encontro">
+        <span>CONVIDADOS ESPECIAIS</span><span>NETWORKING PRESENCIAL</span><span>ALPHAVILLE, SP</span>
+      </div>
       <p className="host-signature">“Ambiente é uma decisão estratégica.”</p>
     </div>
   </section>;

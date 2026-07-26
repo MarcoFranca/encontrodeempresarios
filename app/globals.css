@@ -40,9 +40,12 @@ body::before { content:""; position:fixed; inset:0; z-index:50; pointer-events:n
 @media(max-width:760px){.hero--cinematic .hero-logo{width:78vw!important;height:74px!important;object-fit:cover!important;object-position:center!important;margin:7px 0 11px!important}}
 
 /* Composição reforçada: segunda dobra, anfitrião e header */
-.belief-image-note{position:absolute;z-index:2;left:clamp(42px,7vw,130px);bottom:clamp(52px,10vh,100px);max-width:290px;padding-left:22px;border-left:2px solid var(--gold);color:#fff}
+.belief-image-note{position:absolute;z-index:2;left:clamp(42px,7vw,130px);bottom:clamp(52px,10vh,100px);max-width:440px;padding-left:22px;border-left:2px solid var(--gold);color:#fff}
 .belief-image-note span{display:block;margin-bottom:13px;color:var(--gold-light);font-size:10px;font-weight:800;letter-spacing:.18em}
-.belief-image-note p{margin:0;font:400 clamp(28px,2.5vw,42px)/.98 var(--font-display);letter-spacing:-.025em}
+.belief-image-note p{margin:0;font:400 clamp(30px,2.25vw,42px)/1.02 var(--font-display);letter-spacing:-.025em}
+.host-copy .section-heading{margin-bottom:27px}
+.host-trust{display:flex;flex-wrap:wrap;gap:9px;margin:25px 0 30px}
+.host-trust span{padding:8px 10px;border:1px solid rgba(216,180,90,.38);background:rgba(255,255,255,.035);color:var(--gold-light);font-size:9px;font-weight:800;letter-spacing:.1em}
 .host-placeholder>.host-nameplate span{font:400 clamp(43px,4vw,62px)/.84 var(--font-display)!important;letter-spacing:-.025em!important;color:#fff!important}
 .host-placeholder>.host-nameplate small{margin-top:10px!important}
 .site-header nav{font-size:13px!important;gap:34px!important}
@@ -50,7 +53,7 @@ body::before { content:""; position:fixed; inset:0; z-index:50; pointer-events:n
 @media (min-width:761px){
   .belief--immersive{display:block!important;min-height:590px!important;background:#07101d!important}
   .belief--immersive .belief-image{position:absolute!important;inset:0!important;min-height:0!important;background:linear-gradient(90deg,rgba(4,10,19,.1) 0%,rgba(5,11,21,.3) 38%,rgba(5,11,21,.9) 62%,#0b1625 100%),url('/images/cinematic-business-event.png') center/cover!important;filter:saturate(.78) contrast(1.03)!important}
-  .belief--immersive .belief-copy-wrap{position:relative!important;z-index:1!important;width:min(600px,47vw)!important;max-width:none!important;margin-left:50%!important;padding:84px 7vw 76px 3.5vw!important;background:linear-gradient(90deg,transparent,rgba(11,22,37,.18))!important}
+  .belief--immersive .belief-copy-wrap{position:relative!important;z-index:1!important;width:min(760px,57vw)!important;max-width:none!important;margin-left:43%!important;padding:84px 6vw 76px 3.5vw!important;background:linear-gradient(90deg,transparent,rgba(11,22,37,.18))!important}
   .belief-copy-wrap h2{font-size:clamp(48px,4.7vw,72px)!important;line-height:.98!important}
   .belief-copy-wrap>p:last-child{font-size:17px!important}
   .host--editorial{grid-template-columns:minmax(420px,48%) 1fr!important;min-height:620px!important}
@@ -65,6 +68,9 @@ body::before { content:""; position:fixed; inset:0; z-index:50; pointer-events:n
   .belief-image-note{left:24px;right:24px;bottom:30px;max-width:280px;padding-left:16px}
   .belief-image-note span{margin-bottom:8px;font-size:9px}
   .belief-image-note p{font-size:29px;line-height:1}
+  .host-copy .section-heading{margin-bottom:30px}
+  .host-trust{gap:8px;margin:24px 0 28px}
+  .host-trust span{font-size:8px;padding:8px 9px}
   .hero--cinematic .hero-logo{height:88px!important;object-position:center 52%!important;margin:12px 0 14px!important}
   .host-placeholder>.host-nameplate{position:absolute!important;z-index:3!important;padding:0!important}
   .host-placeholder>.host-nameplate span{font-size:42px!important}
