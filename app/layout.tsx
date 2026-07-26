@@ -8,7 +8,7 @@ const body = Manrope({ variable: "--font-body", subsets: ["latin"], weight: ["40
 export const metadata: Metadata = {
   title: "Encontro de Empresários | 21 de agosto em Alphaville",
   description: "Um encontro presencial para empresários, sócios e gestores que buscam estratégia prática, conexões qualificadas e decisões mais maduras. 21 de agosto, em Alphaville/SP.",
-  icons: { icon: "/brand/logo-encontro-empresarios.png" },
+  icons: { icon: "/brand/favicon-o-arrow.png" },
   openGraph: { title: "Encontro de Empresários", description: "Estratégia prática, conexões empresariais e conversas presenciais em Alphaville.", type: "website" },
   twitter: { card: "summary_large_image", title: "Encontro de Empresários" },
 };
