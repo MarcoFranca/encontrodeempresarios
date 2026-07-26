@@ -23,9 +23,9 @@ export const eventContent = {
       "https://www.google.com/maps/search/?api=1&query=Alameda+Tocantins+956+Alphaville+Industrial+Barueri+SP",
   },
   checkout: {
-    individual: "[INSERIR URL DO CHECKOUT INDIVIDUAL]",
-    duo: "[INSERIR URL DO CHECKOUT DUPLA]",
-    vip: "[INSERIR URL DO CHECKOUT VIP]",
+    individual: "https://payfast.greenn.com.br/ej6hzxc",
+    duo: "https://payfast.greenn.com.br/gs6att6",
+    vip: "https://payfast.greenn.com.br/73e2j5m",
   },
   speakers: [
     { name: "Pablo Marçal", status: "Convidado citado. Credencial e tema a validar." },
@@ -38,7 +38,7 @@ export const eventContent = {
       description: "Para o empresário ou gestor que chega para ampliar repertório e relações.",
       includes: ["1 acesso ao encontro"],
       cta: "Escolher ingresso individual",
-      checkoutUrl: "[INSERIR URL DO CHECKOUT INDIVIDUAL]",
+      checkoutUrl: "https://payfast.greenn.com.br/ej6hzxc",
     },
     {
       name: "Dupla",
@@ -46,7 +46,7 @@ export const eventContent = {
       description: "Para sócios, parceiros ou casal que querem sair com o mesmo contexto para decidir.",
       includes: ["2 acessos ao encontro"],
       cta: "Ir com meu sócio",
-      checkoutUrl: "[INSERIR URL DO CHECKOUT DUPLA]",
+      checkoutUrl: "https://payfast.greenn.com.br/gs6att6",
     },
     {
       name: "VIP",
@@ -54,7 +54,7 @@ export const eventContent = {
       description: "Uma experiência com os benefícios confirmados para esta categoria.",
       includes: ["Acesso ao encontro", "Almoço", "Assento premium"],
       cta: "Escolher experiência VIP",
-      checkoutUrl: "[INSERIR URL DO CHECKOUT VIP]",
+      checkoutUrl: "https://payfast.greenn.com.br/73e2j5m",
       featured: true,
     },
   ] satisfies Ticket[],
