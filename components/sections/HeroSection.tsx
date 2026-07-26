@@ -13,8 +13,8 @@ export function HeroSection() {
     <div className="hero-overlay" aria-hidden="true" /><div className="hero-grid" aria-hidden="true" />
     <div className="hero-content">
       <motion.p className="eyebrow hero-eyebrow" {...enter(0.05)}>{eventContent.dateLabel} <span>·</span> {eventContent.city}</motion.p>
-      <motion.p className="hero-host" {...enter(0.09)}>COM PAULO HENRIQUES <span>·</span> ANFITRIÃO</motion.p>
       <motion.img className="hero-logo" src="/brand/logo-encontro-empresarios.png" width="1513" height="1024" alt="Logo oficial Encontro de Empresários" {...enter(0.12)} />
+      <motion.p className="hero-host" {...enter(0.15)}>COM PAULO HENRIQUES <span>·</span> ANFITRIÃO</motion.p>
       <motion.h1 {...enter(0.2)}>Um dia na sala certa pode mudar a velocidade das suas decisões.</motion.h1>
       <motion.p className="hero-copy" {...enter(0.3)}>Estratégia prática, conexões empresariais e conversas que normalmente levariam anos para acontecer — concentradas em uma experiência presencial em Alphaville.</motion.p>
       <motion.div className="hero-actions" {...enter(0.4)}><a className="button button--gold" href="#ingressos" data-event="hero_cta_click">Garantir meu ingresso <span aria-hidden="true">↗</span></a><a className="button button--ghost" href="#experiencia">Conhecer a experiência <span aria-hidden="true">↓</span></a></motion.div>
