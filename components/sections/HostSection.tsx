@@ -9,7 +9,7 @@ export function HostSection() {
     </div>
     <div className="host-copy">
       <SectionHeading eyebrow="Seu anfitrião" title="Paulo abre a sala onde a conversa ganha outro nível." />
-      <p>Paulo Henriques reúne empresários para aproximar estratégia, posicionamento e próximos passos em um mesmo ambiente.</p>
+      <p>Empresário e mentor de empresários, fundador do ecossistema Outlier. Construiu sua trajetória ajudando donos de negócio a sair do operacional, escalar com estratégia e ocupar o lugar de autoridade em seus mercados.</p>
       <div className="host-trust" aria-label="Sinais de credibilidade do encontro">
         <span>CONVIDADOS ESPECIAIS</span><span>NETWORKING PRESENCIAL</span><span>ALPHAVILLE, SP</span>
       </div>
