@@ -39,7 +39,14 @@ body::before { content:""; position:fixed; inset:0; z-index:50; pointer-events:n
 .hero--cinematic .hero-logo{width:min(390px,62vw)!important;height:92px!important;object-fit:cover!important;object-position:center!important;margin:8px 0 12px!important}
 @media(max-width:760px){.hero--cinematic .hero-logo{width:78vw!important;height:74px!important;object-fit:cover!important;object-position:center!important;margin:7px 0 11px!important}}
 
-/* Correções de composição: segunda dobra, anfitrião e recorte mobile */
+/* Composição reforçada: segunda dobra, anfitrião e header */
+.belief-image-note{position:absolute;z-index:2;left:clamp(42px,7vw,130px);bottom:clamp(52px,10vh,100px);max-width:290px;padding-left:22px;border-left:2px solid var(--gold);color:#fff}
+.belief-image-note span{display:block;margin-bottom:13px;color:var(--gold-light);font-size:10px;font-weight:800;letter-spacing:.18em}
+.belief-image-note p{margin:0;font:400 clamp(28px,2.5vw,42px)/.98 var(--font-display);letter-spacing:-.025em}
+.host-placeholder>.host-nameplate span{font:400 clamp(43px,4vw,62px)/.84 var(--font-display)!important;letter-spacing:-.025em!important;color:#fff!important}
+.host-placeholder>.host-nameplate small{margin-top:10px!important}
+.site-header nav{font-size:13px!important;gap:34px!important}
+.site-header .header-cta{padding:12px 19px!important;font-size:11px!important;letter-spacing:.01em}
 @media (min-width:761px){
   .belief--immersive{display:block!important;min-height:590px!important;background:#07101d!important}
   .belief--immersive .belief-image{position:absolute!important;inset:0!important;min-height:0!important;background:linear-gradient(90deg,rgba(4,10,19,.1) 0%,rgba(5,11,21,.3) 38%,rgba(5,11,21,.9) 62%,#0b1625 100%),url('/images/cinematic-business-event.png') center/cover!important;filter:saturate(.78) contrast(1.03)!important}
@@ -48,15 +55,19 @@ body::before { content:""; position:fixed; inset:0; z-index:50; pointer-events:n
   .belief-copy-wrap>p:last-child{font-size:17px!important}
   .host--editorial{grid-template-columns:minmax(420px,48%) 1fr!important;min-height:620px!important}
   .host-placeholder{min-height:620px!important}
-  .host-placeholder>.host-nameplate{position:absolute!important;z-index:3!important;left:36px!important;bottom:34px!important;padding:0!important}
+  .host-placeholder>.host-nameplate{position:absolute!important;z-index:3!important;left:36px!important;top:60%!important;bottom:auto!important;padding:0!important}
   .host-placeholder>.host-nameplate::before{display:none!important}
   .host-copy{padding:66px clamp(42px,6vw,92px)!important}
   .host-copy h2{font-size:clamp(46px,4.4vw,66px)!important;line-height:.98!important}
 }
 @media(max-width:760px){
   .belief--immersive .belief-image{position:relative!important;inset:auto!important}
+  .belief-image-note{left:24px;right:24px;bottom:30px;max-width:280px;padding-left:16px}
+  .belief-image-note span{margin-bottom:8px;font-size:9px}
+  .belief-image-note p{font-size:29px;line-height:1}
   .hero--cinematic .hero-logo{height:88px!important;object-position:center 52%!important;margin:12px 0 14px!important}
   .host-placeholder>.host-nameplate{position:absolute!important;z-index:3!important;padding:0!important}
+  .host-placeholder>.host-nameplate span{font-size:42px!important}
   .host-placeholder>.host-nameplate::before{display:none!important}
 }
 
