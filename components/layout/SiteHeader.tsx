@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element -- Vinext's local image optimizer crashes without a Cloudflare asset binding. */
+import { TicketLink } from "../shared/TicketLink";
 export function SiteHeader() {
   return (
     <header className="site-header">
@@ -10,7 +11,7 @@ export function SiteHeader() {
         <a href="#convidados">Convidados</a>
         <a href="#ingressos">Ingressos</a>
       </nav>
-      <a className="header-cta" href="#ingressos" data-event="header_cta_click">Garantir meu ingresso</a>
+      <TicketLink className="header-cta" data-event="header_cta_click">Garantir meu ingresso</TicketLink>
     </header>
   );
 }

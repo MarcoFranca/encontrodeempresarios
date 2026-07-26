@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element -- Vinext's local image optimizer crashes without a Cloudflare asset binding. */
 import { motion, useReducedMotion } from "framer-motion";
 import { eventContent } from "../../content/event";
+import { TicketLink } from "../shared/TicketLink";
 
 export function HeroSection() {
   const reduceMotion = useReducedMotion();
@@ -18,7 +19,7 @@ export function HeroSection() {
       <motion.h1 {...enter(0.2)}>Um dia na sala certa pode mudar a velocidade das suas decisões.</motion.h1>
       <motion.p className="hero-copy" {...enter(0.3)}>Estratégia prática, conexões empresariais e conversas que ajudam a encurtar caminhos, reunidas em um encontro presencial em Alphaville.</motion.p>
       <motion.p className="lot-notice hero-lot-notice" {...enter(0.36)}>{eventContent.lotNotice}</motion.p>
-      <motion.div className="hero-actions" {...enter(0.4)}><a className="button button--gold" href="#ingressos" data-event="hero_cta_click">Garantir meu ingresso <span aria-hidden="true">↗</span></a><a className="button button--ghost" href="#experiencia">Conhecer a experiência <span aria-hidden="true">↓</span></a></motion.div>
+      <motion.div className="hero-actions" {...enter(0.4)}><TicketLink className="button button--gold" data-event="hero_cta_click">Garantir meu ingresso <span aria-hidden="true">↗</span></TicketLink><a className="button button--ghost" href="#experiencia">Conhecer a experiência <span aria-hidden="true">↓</span></a></motion.div>
       <motion.div className="hero-meta hero-meta--prominent" aria-label="Informações do evento" {...enter(0.52)}><span><b>21 AGO</b>2026</span><span><b>10H–18H</b>presencial</span><span><b>ALPHAVILLE</b>SP</span></motion.div>
     </div>
     <aside className="hero-proof"><span className="eyebrow">Uma experiência presencial</span><p>Uma sala desenhada para repertório, relações e decisões mais maduras.</p></aside><div className="hero-stage-card"><span>21</span><p>AGOSTO<br />ALPHAVILLE</p></div><a className="hero-scroll-cue" href="#efeito-sala-certa" aria-label="Conhecer o Efeito Sala Certa"><span>ROLE PARA EXPLORAR</span><i aria-hidden="true" /></a>

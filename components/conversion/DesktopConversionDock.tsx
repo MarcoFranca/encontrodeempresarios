@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { TicketLink } from "../shared/TicketLink";
 
 export function DesktopConversionDock() {
   const [visible, setVisible] = useState(false);
@@ -23,6 +24,6 @@ export function DesktopConversionDock() {
   }, []);
 
   return <AnimatePresence>{visible && !coveredSection ? <motion.aside className="desktop-dock" initial={reduced ? false : { opacity: 0, y: 22 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 22 }}>
-    <span>21 AGO · ALPHAVILLE</span><b>Ingressos a partir de R$ 197</b><a href="#ingressos">Garantir meu ingresso ↗</a>
+    <span>21 AGO · ALPHAVILLE</span><b>Ingressos a partir de R$ 197</b><TicketLink>Garantir meu ingresso ↗</TicketLink>
   </motion.aside> : null}</AnimatePresence>;
 }
