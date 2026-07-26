@@ -36,6 +36,11 @@ yarn-error.log*
 
 # typescript
 next-env.d.ts
+*.tsbuildinfo
+
+# local Codex development logs
+.codex-dev*.log
+.codex-dev*.err.log
 /dist/
 /.wrangler/
 /outputs/
