@@ -17,7 +17,7 @@ export const eventContent = {
   city: "Alphaville, SP",
   venue: {
     name: "Plataforma Internacional",
-    address: "Alameda Tocantins, 956 — Alphaville Industrial, Barueri/SP",
+    address: "Alameda Tocantins, 956, Alphaville Industrial, Barueri/SP",
     mapUrl:
       "https://www.google.com/maps/search/?api=1&query=Alameda+Tocantins+956+Alphaville+Industrial+Barueri+SP",
   },
@@ -27,8 +27,8 @@ export const eventContent = {
     vip: "[INSERIR URL DO CHECKOUT VIP]",
   },
   speakers: [
-    { name: "Pablo Marçal", status: "Convidado citado — credencial e tema a validar." },
-    { name: "Bruno Avelar", status: "Convidado citado — credencial e tema a validar." },
+    { name: "Pablo Marçal", status: "Convidado citado. Credencial e tema a validar." },
+    { name: "Bruno Avelar", status: "Convidado citado. Credencial e tema a validar." },
   ],
   tickets: [
     {

@@ -11,7 +11,7 @@ export function BeliefBreakSection() {
     <Reveal className="belief-copy-wrap">
       <p className="eyebrow">O custo do isolamento</p>
       <h2>O problema não é falta de informação.<br /><em>É continuar decidindo sozinho.</em></h2>
-      <p>Quando o ambiente melhora, muda também a qualidade da pergunta, da referência e da próxima decisão.</p>
+      <p>Quando o ambiente melhora, as perguntas ficam melhores. E boas perguntas levam a decisões mais claras.</p>
     </Reveal>
   </section>;
 }
