@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import type { MetaParameters, MetaPixelFunction } from "./meta";
+import type { MetaEventCommand, MetaParameters, MetaPixelFunction } from "./meta";
 
 const PIXEL_ID = "1019463380954426";
 
@@ -9,7 +9,7 @@ export function MetaPixel() {
   useEffect(() => {
     if (window.fbq) return;
 
-    const fbq = ((command: "init" | "track", eventOrPixel: string, parameters?: MetaParameters) => {
+    const fbq = ((command: MetaEventCommand, eventOrPixel: string, parameters?: MetaParameters) => {
       if (fbq.callMethod) fbq.callMethod(command, eventOrPixel, parameters);
       else fbq.queue?.push([command, eventOrPixel, parameters]);
     }) as MetaPixelFunction;

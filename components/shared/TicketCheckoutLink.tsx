@@ -1,7 +1,7 @@
 "use client";
 
 import type { AnchorHTMLAttributes, MouseEvent, ReactNode } from "react";
-import { trackMetaEvent } from "../analytics/meta";
+import { trackMetaCustomEvent, trackMetaEvent } from "../analytics/meta";
 
 type TicketCheckoutLinkProps = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href"> & {
   children: ReactNode;
@@ -17,7 +17,14 @@ export function TicketCheckoutLink({ children, href, ticketName, ticketId, value
     onClick?.(event);
     if (event.defaultPrevented) return;
 
-    trackMetaEvent("InitiateCheckout", { content_name: ticketName, content_ids: [ticketId], content_type: "product", currency: "BRL", num_items: quantity, value });
+    const parameters = { content_name: ticketName, content_ids: [ticketId], content_type: "product", currency: "BRL", num_items: quantity, value };
+    trackMetaEvent("InitiateCheckout", parameters);
+    trackMetaCustomEvent(`Checkout_${ticketId}`, parameters);
+
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.currentTarget.target === "_blank") return;
+
+    event.preventDefault();
+    window.setTimeout(() => window.location.assign(href), 220);
   };
 
   return <a {...props} href={href} onClick={handleClick}>{children}</a>;
