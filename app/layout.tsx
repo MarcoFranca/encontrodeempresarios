@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     title: "Encontro de Empresários",
     description: "Estratégia prática, conexões empresariais e conversas presenciais em Alphaville.",
     type: "website",
-    images: [{ url: "/og.png", width: 1730, height: 909, alt: "Encontro de Empresários com Paulo Henriques, Pablo Marçal e Bruno Avelar" }],
+    images: [{ url: "/og-social.jpg", width: 1730, height: 909, type: "image/jpeg", alt: "Encontro de Empresários com Paulo Henriques, Pablo Marçal e Bruno Avelar" }],
   },
-  twitter: { card: "summary_large_image", title: "Encontro de Empresários", images: ["/og.png"] },
+  twitter: { card: "summary_large_image", title: "Encontro de Empresários", images: ["/og-social.jpg"] },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) { return <html lang="pt-BR"><body className={`${display.variable} ${body.variable}`}><MetaPixel />{children}</body></html>; }
