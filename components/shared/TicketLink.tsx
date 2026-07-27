@@ -6,5 +6,5 @@ type TicketLinkProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
 };
 
 export function TicketLink({ children, onClick, ...props }: TicketLinkProps) {
-  return <ScrollLink {...props} targetId="ingressos" onClick={onClick}>{children}</ScrollLink>;
+  return <ScrollLink {...props} targetId="ingressos" metaEvent="Contact" metaParameters={{ content_name: "Garantir meu ingresso" }} onClick={onClick}>{children}</ScrollLink>;
 }
