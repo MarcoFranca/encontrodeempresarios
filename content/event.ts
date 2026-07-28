@@ -71,8 +71,6 @@ export const eventContent = {
   faq: [
     ["Como recebo meu ingresso?", "A emissão e as instruções de credenciamento serão informadas pelo checkout oficial quando o link for publicado."],
     ["Posso transferir ou cancelar meu ingresso?", "A política de transferência e cancelamento será apresentada no checkout oficial. Ela ainda precisa ser confirmada pela organização."],
-    ["Há estacionamento?", "As informações operacionais de estacionamento ainda precisam ser confirmadas com o local."],
-    ["Qual é o dress code?", "A orientação de vestimenta ainda será comunicada pela organização."],
-    ["O que inclui o VIP?", "Inclui acesso ao encontro, almoço e assento premium. Outros benefícios não foram anunciados e não estão sendo presumidos."],
+    ["O que inclui o VIP?", "Inclui acesso ao encontro, almoço e assento premium."],
   ],
 } as const;
