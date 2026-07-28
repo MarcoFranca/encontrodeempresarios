@@ -28,8 +28,18 @@ export const eventContent = {
     vip: "https://payfast.greenn.com.br/73e2j5m",
   },
   speakers: [
-    { name: "Pablo Marçal", status: "Convidado citado. Credencial e tema a validar." },
-    { name: "Bruno Avelar", status: "Convidado citado. Credencial e tema a validar." },
+    {
+      name: "Pablo Marçal",
+      role: "Empresário, mentor, escritor e investidor",
+      description: "Uma presença para ampliar a conversa sobre visão, posicionamento e a coragem de agir quando o negócio pede um próximo movimento.",
+      focus: "Visão que provoca decisão",
+    },
+    {
+      name: "Bruno Avelar",
+      role: "Empreendedor e especialista em networking estratégico",
+      description: "Reconhecido por conectar empresários a ambientes e relações de alto nível, chega para lembrar que crescimento também depende das mesas em que você escolhe sentar.",
+      focus: "Relações que abrem caminhos",
+    },
   ],
   tickets: [
     {
